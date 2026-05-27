@@ -54,7 +54,11 @@ schedule:
 # ===============================================================
 platforms:
   enabled: true                          # 啟用爬蟲總開關（RSS 需要此選項為 true）
-  sources: []                            # 清空大陸平台，僅使用台灣 RSS
+  sources:                               # 保留 2 個平台供程式運作，主要新聞來源仍是台灣 RSS
+    - id: "wallstreetcn-hot"
+      name: "華爾街見聞"
+    - id: "zhihu"
+      name: "知乎"
 
 
 
