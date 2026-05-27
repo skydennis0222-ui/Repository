@@ -83,33 +83,33 @@ rss:
   # - 正整数：覆盖全局设置，只推送此天数内的文章
   # - 0：禁用此频道的新鲜度过滤，推送所有文章
   feeds:
-    - id: "udn"
-      name: "聯合新聞網"
-      url: "https://udn.com/rssfeed/news/2/6638"
-
-    - id: "cna"
-      name: "中央社"
-      url: "https://www.cna.com.tw/rss/aall.aspx"
-
-    - id: "ltn"
-      name: "自由時報"
+    - id: "ltn-all"
+      name: "自由時報 即時"
       url: "https://news.ltn.com.tw/rss/all.xml"
 
-    - id: "ettoday"
-      name: "ETtoday 新聞雲"
-      url: "https://www.ettoday.net/rss/ettoday.xml"
+    - id: "ltn-politics"
+      name: "自由時報 政治"
+      url: "https://news.ltn.com.tw/rss/politics.xml"
 
-    - id: "setn"
-      name: "三立新聞"
-      url: "https://www.setn.com/rss.aspx"
+    - id: "ltn-business"
+      name: "自由時報 財經"
+      url: "https://news.ltn.com.tw/rss/business.xml"
 
-    - id: "cnyes-tw"
-      name: "鉅亨網台股"
-      url: "https://feeds.cnyes.com/market/tw/news.xml"
+    - id: "ltn-sports"
+      name: "自由時報 體育"
+      url: "https://news.ltn.com.tw/rss/sports.xml"
 
-    - id: "tvbs"
-      name: "TVBS 新聞"
-      url: "https://news.tvbs.com.tw/rss/news"
+    - id: "ltn-life"
+      name: "自由時報 生活"
+      url: "https://news.ltn.com.tw/rss/life.xml"
+
+    - id: "ettoday-realtime"
+      name: "ETtoday 即時"
+      url: "https://feeds.feedburner.com/ettoday/realtime"
+
+    - id: "ettoday-finance"
+      name: "ETtoday 財經"
+      url: "https://feeds.feedburner.com/ettoday/finance"
 
 
 # ===============================================================
