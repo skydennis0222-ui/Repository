@@ -40,8 +40,8 @@ app:
 # 详细时间线图请查看 config/timeline.yaml
 # ===============================================================
 schedule:
-  enabled: false                        # 是否启用调度系统（true=启用, false=关闭，默认关闭）
-  preset: "morning_evening"             # 预设模板名称（见上方说明）
+  enabled: true                         # 已啟用調度系統
+  preset: "morning_evening"             # 早晨 + 晚間三段式推送
 
 
 # ===============================================================
@@ -87,6 +87,7 @@ rss:
   # - 正整数：覆盖全局设置，只推送此天数内的文章
   # - 0：禁用此频道的新鲜度过滤，推送所有文章
   feeds:
+    # === 自由時報 ===
     - id: "ltn-all"
       name: "自由時報 即時"
       url: "https://news.ltn.com.tw/rss/all.xml"
@@ -107,6 +108,11 @@ rss:
       name: "自由時報 生活"
       url: "https://news.ltn.com.tw/rss/life.xml"
 
+    - id: "ltn-world"
+      name: "自由時報 國際"
+      url: "https://news.ltn.com.tw/rss/world.xml"
+
+    # === ETtoday ===
     - id: "ettoday-realtime"
       name: "ETtoday 即時"
       url: "https://feeds.feedburner.com/ettoday/realtime"
@@ -114,6 +120,31 @@ rss:
     - id: "ettoday-finance"
       name: "ETtoday 財經"
       url: "https://feeds.feedburner.com/ettoday/finance"
+
+    - id: "ettoday-tech"
+      name: "ETtoday 3C"
+      url: "https://feeds.feedburner.com/ettoday/3c"
+
+    - id: "ettoday-sports"
+      name: "ETtoday 體育"
+      url: "https://feeds.feedburner.com/ettoday/sports"
+
+    - id: "ettoday-consumer"
+      name: "ETtoday 消費"
+      url: "https://feeds.feedburner.com/ettoday/consumer"
+
+    # === 科技資訊媒體 ===
+    - id: "ithome"
+      name: "iThome 鐵人賽"
+      url: "https://ithelp.ithome.com.tw/rss/articles"
+
+    - id: "inside"
+      name: "INSIDE 硬塞網"
+      url: "https://www.inside.com.tw/feed"
+
+    - id: "techorange"
+      name: "TechOrange"
+      url: "https://buzzorange.com/techorange/feed/"
 
 
 # ===============================================================
