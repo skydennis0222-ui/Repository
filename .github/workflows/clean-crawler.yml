@@ -9,6 +9,8 @@ name: Check In
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 4 * * 1'   # 每週一 12:00（台北時間）自動續期
 
 jobs:
   del_runs:
