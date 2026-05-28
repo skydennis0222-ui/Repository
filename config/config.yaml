@@ -40,7 +40,7 @@ app:
 # 详细时间线图请查看 config/timeline.yaml
 # ===============================================================
 schedule:
-  enabled: true                         # 已啟用調度系統
+  enabled: false                        # 暫時關閉調度測試
   preset: "office_hours"                # 三段式：早8/中12/晚7
 
 
