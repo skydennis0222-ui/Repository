@@ -122,7 +122,7 @@ def render_feishu_content(
         if mode == "incremental":
             mode_text = "增量模式下暂无新增匹配的热点词汇"
         elif mode == "current":
-            mode_text = "当前榜单模式下暂无匹配的热点词汇"
+            mode_text = "當前榜單模式下暫無匹配的熱點詞彙"
         else:
             mode_text = "暂无匹配的热点词汇"
         text_content = f"📭 {mode_text}\n\n"
@@ -263,7 +263,7 @@ def render_dingtalk_content(
         if mode == "incremental":
             mode_text = "增量模式下暂无新增匹配的热点词汇"
         elif mode == "current":
-            mode_text = "当前榜单模式下暂无匹配的热点词汇"
+            mode_text = "當前榜單模式下暫無匹配的熱點詞彙"
         else:
             mode_text = "暂无匹配的热点词汇"
         text_content += f"📭 {mode_text}\n\n"
