@@ -412,7 +412,7 @@ ai_analysis:
   enabled: true                     # 是否启用 AI 分析（true=启用, false=关闭）—— 总开关
                                     # 开启 schedule 后此项仍为总开关：false=永远不分析，true=由调度控制
 
-  language: "Chinese"               # 分析报告语言（如 "English", "Korean", "法语"）
+  language: "Traditional Chinese (繁體中文)"   # 分析報告使用繁體中文
   prompt_file: "ai_analysis_prompt.txt"   # 提示词文件（相对于 config 目录）
 
   mode: "follow_report"             # AI 分析模式（可独立于 report.mode）
@@ -439,12 +439,12 @@ ai_analysis:
 # ===============================================================
 ai_translation:
   enabled: true                     # 是否启用翻译功能（true=启用, false=关闭）
-  language: "中文"                   # 翻译目标语言（如 "English", "Korean", "法语"）
+  language: "繁體中文 (Traditional Chinese)"   # 翻譯為繁體中文
   prompt_file: "ai_translation_prompt.txt"   # 提示词文件（相对于 config 目录）
 
   # 翻译范围（display.regions 关闭的区域即使开启也不会翻译）
   scope:
-    hotlist: false                  # 翻译热榜标题（true=翻译, false=不翻译）
+    hotlist: true                   # 翻譯熱榜標題為繁體中文
     rss: true                       # 翻译 RSS 标题（true=翻译, false=不翻译）
     standalone: true                # 翻译独立展示区标题（true=翻译, false=不翻译）
 
